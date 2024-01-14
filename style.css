@@ -1,0 +1,218 @@
+body,
+html {
+    margin: 0;
+    font-family: Poppins;
+    width: 100vw;
+    background: linear-gradient(75deg, grey, white);
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(45deg, skyblue, hotpink);
+    width: 100vw;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 105px;
+    /* padding: 0 20vw; */
+    gap: 5vw;
+    box-shadow: inset 20px 20px 60px skyblue,
+        inset -20px -20px 60px hotpink, 1px 1px 30px rgb(129, 72, 72);
+}
+
+.foto-profil {
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border-radius: 0;
+    background-image: url(img/foto.jpg);
+    background-size: cover;
+    border: 3px dotted white;
+    transform: translateY(-30px);
+    box-shadow: 1px 1px 10px black;
+    transition: all 1s ease-in-out;
+}
+
+.foto-profil:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 30px black;
+}
+
+.title {
+    position: relative;
+}
+
+.text {
+    /* background-color: blue; */
+    position: absolute;
+    width: 430px;
+    top: -25px;
+    line-height: 0;
+}
+
+.text p {
+    color: rgb(255, 254, 254);
+    text-shadow: 2px 2px 15px rgb(0, 0, 0)
+}
+
+.text p:nth-child(1) {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 0;
+}
+
+.text p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button {
+    position: relative;
+    top: 120px;
+}
+
+.button button {
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+    border: solid transparent;
+    font-size: 17px;
+    box-shadow: 2px 2px 10px rgb(56, 44, 44);
+    margin-right: 25px;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+
+.button .download-cv {
+    background-color: rgb(100, 35, 160);
+    color: white;
+}
+
+.button .hire-me {
+    background-color: rgb(88, 196, 88);
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: rgb(226, 214, 214);
+    width: 50vw;
+    padding: 2vh 5vw;
+    border-radius: 15px;
+    box-shadow: inset 1px 1px 10px rgb(134, 124, 124);
+}
+
+.about-me p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.html,
+.css {
+    font-weight: 600;
+    font-size: large;
+}
+
+.skill .html .parent {
+    background-color: rgb(202, 193, 193);
+    border: 0;
+    border-radius: 30px;
+    width: 80%;
+    height: 25px;
+}
+
+.skill .html .parent .child {
+    background: linear-gradient(45deg, rgb(219, 186, 123), orange);
+    width: 75%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.skill .css .parent {
+    background-color: rgb(202, 193, 193);
+    border: 0;
+    border-radius: 30px;
+    width: 80%;
+    height: 25px;
+}
+
+.skill .css .parent .child {
+    background: linear-gradient(45deg, rgb(156, 156, 238), blue);
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.contact h1 {
+    margin-bottom: 0.01px;
+}
+
+.contact .contact-type {
+    display: inline-block;
+}
+
+.contact .contact-type li {
+    padding-left: 10px;
+}
+
+.contact .contact-type li:nth-child(1) {
+    list-style: '✉️';
+}
+
+.contact .contact-type li:nth-child(2) {
+    list-style: '☎️';
+}
+
+.contact .contact-type li:nth-child(3) {
+    list-style: '🏠';
+}
+
+.contact .contact-value {
+    display: inline-block;
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socmed {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.socmed img {
+    width: 45px;
+    filter: contrast(10%);
+    transition: all 1s ease-in-out;
+}
+
+.socmed img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+}
